@@ -48,7 +48,8 @@
         <activity
             android:name=".activities.SignUpActivity"
             android:parentActivityName=".activities.LoginActivity" />
-        <activity android:name=".activities.LoginActivity">
+        <activity android:name=".activities.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,7 +63,8 @@
         <service android:name=".services.MainForegroundService" />
         <service android:name=".services.GeoFencingForegroundService" />
 
-        <receiver android:name=".broadcasts.BootCompleteReceiver">
+        <receiver android:name=".broadcasts.BootCompleteReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
 
@@ -73,7 +75,8 @@
             android:name=".broadcasts.AdminReceiver"
             android:description="@string/device_admin_description"
             android:label="@string/device_admin"
-            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:exported="true">
             <meta-data
                 android:name="android.app.device_admin"
                 android:resource="@xml/device_admin_policies" />

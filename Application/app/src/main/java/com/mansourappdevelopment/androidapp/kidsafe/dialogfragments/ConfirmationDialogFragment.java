@@ -18,6 +18,8 @@ import com.mansourappdevelopment.androidapp.kidsafe.R;
 import com.mansourappdevelopment.androidapp.kidsafe.interfaces.OnConfirmationListener;
 import com.mansourappdevelopment.androidapp.kidsafe.utils.Constant;
 
+import java.util.Objects;
+
 public class ConfirmationDialogFragment extends DialogFragment {
 	private Button btnConfirm;
 	private Button btnCancelConfirm;
