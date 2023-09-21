@@ -34,8 +34,8 @@ public class ConfirmationDialogFragment extends DialogFragment {
 	
 	@Override
 	public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-		getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//		//getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
+//		getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		onConfirmationListener = (OnConfirmationListener) getActivity();
 		
 		Bundle bundle = getArguments();

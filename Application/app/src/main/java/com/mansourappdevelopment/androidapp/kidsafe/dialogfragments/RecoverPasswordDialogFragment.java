@@ -33,7 +33,7 @@ public class RecoverPasswordDialogFragment extends DialogFragment {
 	@Override
 	public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 		onPasswordResetListener = (OnPasswordResetListener) getActivity();
-		getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
+		//getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		txtRecoveryEmail = view.findViewById(R.id.txtRecoveryEmail);
 		

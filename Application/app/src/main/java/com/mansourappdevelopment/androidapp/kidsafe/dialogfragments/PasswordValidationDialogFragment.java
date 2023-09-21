@@ -35,7 +35,7 @@ public class PasswordValidationDialogFragment extends DialogFragment {
 	public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
 		onPasswordValidationListener = (OnPasswordValidationListener) getActivity();
-		getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
+		//getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		
 		txtValidationPassword = view.findViewById(R.id.txtValidationPassword);

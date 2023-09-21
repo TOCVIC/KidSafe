@@ -33,7 +33,7 @@ public class PermissionExplanationDialogFragment extends DialogFragment {
 	
 	@Override
 	public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-		getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
+		//getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		txtPermissionBody = view.findViewById(R.id.txtPermissionBody);
 		if (getTargetFragment() != null)

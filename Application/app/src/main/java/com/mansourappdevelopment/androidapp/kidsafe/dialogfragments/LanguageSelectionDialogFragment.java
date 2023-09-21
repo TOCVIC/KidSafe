@@ -34,7 +34,7 @@ public class LanguageSelectionDialogFragment extends DialogFragment {
 	@Override
 	public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
-		getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
+		//getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		onLanguageSelectionListener = (OnLanguageSelectionListener) getActivity();
 		

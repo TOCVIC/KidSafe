@@ -40,6 +40,7 @@ public class PhoneLockDialogFragment extends DialogFragment {
 		return inflater.inflate(R.layout.fragment_dialog_lock, container, false);
 	}
 
+
     /*@Override
     public void onDismiss(DialogInterface dialog) {
         super.onDismiss(dialog);
@@ -48,7 +49,7 @@ public class PhoneLockDialogFragment extends DialogFragment {
 	
 	@Override
 	public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-		getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
+		//getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		onChildClickListener = (OnChildClickListener) getActivity();
 		
